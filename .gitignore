@@ -1,0 +1,20 @@
+# Backup files
+*~
+
+# Build folder
+*build/
+
+# Node installs
+*npm-debug.log
+*node_modules/
+*.sass-cache/
+
+# Firebase
+*.firebaserc
+firebase.json
+
+# Mac
+*.DS_Store
+
+# PHP Storm Config files
+.idea/

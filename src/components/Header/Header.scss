@@ -1,0 +1,93 @@
+.core {
+  width: 100%;
+  position: relative;
+}
+.appBar {
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: .2s;
+  position: absolute;
+  .appBarContent {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 55px 0 0;
+    @media (max-width: 960px) {
+      padding: 15px 0 0;
+    }
+    .linkBlock {
+      flex: 1;
+      .linkButton {
+        font-size: 0.75rem;
+        color: white;
+        letter-spacing: 0.18rem;
+        text-transform: uppercase;
+        padding: 15px 0;
+        box-sizing: border-box;
+        &:hover {
+          background: transparent;
+          .icon {
+            span {
+              width: 30px;
+              &:after {
+                width: 30px;
+              }
+            }
+          }
+        }
+        .icon {
+          width: 30px;
+          margin-right: 18px;
+          display: inline-block;
+          span {
+            width: 20px;
+            height: 2px;
+            background: white;
+            display: block;
+            position: relative;
+            transition: width .2s ease-in-out;
+            &:before, &:after {
+              content: '';
+              height: 2px;
+              left: 0;
+              background: white;
+              position: absolute;
+              display: inline-block;
+            }
+            &:before {
+              width: 30px;
+              top: -5px;
+            }
+            &:after {
+              width: 25px;
+              top: 5px;
+              transition: width .23s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+    .imgBlock {
+      display: flex;
+      a {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+          width: 155px;
+          display: block;
+          @media (max-width: 960px) {
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+}

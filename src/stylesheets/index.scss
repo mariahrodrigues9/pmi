@@ -1,0 +1,144 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+
+:global .container {
+  width: 1200px;
+  max-width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'latoregular';
+  src: url('../assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latolight';
+  src: url('../assets/fonts/lato-light-webfont.woff2') format('woff2'),
+       url('../assets/fonts/lato-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latobold';
+  src: url('../assets/fonts/lato-bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/lato-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'latoblack';
+  src: url('../assets/fonts/lato-black-webfont.woff2') format('woff2'),
+       url('../assets/fonts/lato-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../assets/fonts/icomoon.eot?4zf4ub');
+  src: url('../assets/fonts/icomoon.eot?4zf4ub#iefix') format('embedded-opentype'),
+       url('../assets/fonts/icomoon.woff2?4zf4ub') format('woff2'),
+       url('../assets/fonts/icomoon.ttf?4zf4ub') format('truetype'),
+       url('../assets/fonts/icomoon.woff?4zf4ub') format('woff'),
+       url('../assets/fonts/icomoon.svg?4zf4ub#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:global [class^="icon-"], :global [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:global .icon-email:before {
+  content: "\e900";
+}
+:global .icon-cross:before {
+  content: "\e901";
+}
+:global .icon-drink:before {
+  content: "\e902";
+}
+:global .icon-brand:before {
+  content: "\e903";
+}
+:global .icon-pin:before {
+  content: "\e904";
+}
+:global .icon-area:before {
+  content: "\e905";
+}
+:global .icon-play:before {
+  content: "\e906";
+}
+:global .icon-arrow-left:before {
+  content: "\e912";
+}
+:global .icon-arrow-right:before {
+  content: "\e907";
+}
+:global .icon-leaf:before {
+  content: "\e908";
+}
+:global .icon-full-screen:before {
+  content: "\e909";
+}
+:global .icon-phone:before {
+  content: "\e90a";
+}
+:global .icon-whats:before {
+  content: "\e90b";
+}
+:global .icon-progress:before {
+  content: "\e90c";
+}
+:global .icon-door:before {
+  content: "\e90d";
+}
+:global .icon-check:before {
+  content: "\e90e";
+}
+:global .icon-currency:before {
+  content: "\e90f";
+}
+:global .icon-column:before {
+  content: "\e910";
+}
+:global .icon-paper:before {
+  content: "\e911";
+}
